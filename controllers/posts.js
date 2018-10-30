@@ -1,9 +1,9 @@
-const Post = require('../models/post');
+const Post = require('../models/posts');
 module.exports = app => {
     app.get('/', (req, res) => {
         Post.find({})
         .then(posts => {
-            res.render("posts-index", { posts });
+            res.render("../views/posts-index.handlebars", { posts });
         })
         .catch(err => {
             console.log(err.message);

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-assert = requore("assert");
+assert = require("assert");
 
 const url = "mongodb://localhost/reddit-db";
 mongoose.Promise = global.Promise;
